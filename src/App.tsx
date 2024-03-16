@@ -1,27 +1,13 @@
-import { useState } from 'react'
-import './App.css'
-import './nav.css'
-import { Readconstract } from './read'
-
-
-
-
-
-
-
-
-
-
-
+import "./App.css";
+import Read from "./Read";
+import Reads from "./Reads";
+import "./nav.css";
 
 function App() {
   return (
     <div className="App">
       <div className="nav">
-
-        <div className="navtw">
-
-        </div>
+        <div className="navtw"></div>
         <div className="walletdev">
           <w3m-button />
         </div>
@@ -37,11 +23,14 @@ function App() {
           <h1>222</h1>
         </div> */}
         {/* -------------------------------------------------- */}
-       
-        <Readconstract />
+
+        <p>Read</p>
+        <Read />
+        <p>ReadContracts</p>
+        <Reads />
       </div>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
